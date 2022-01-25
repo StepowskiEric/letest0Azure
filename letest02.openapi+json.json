@@ -1,0 +1,498 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+        "title": "letest02",
+        "description": "Import from \"letest0\" Function App",
+        "version": "1.0"
+    },
+    "servers": [
+        {
+            "url": "https://letest0-apim.azure-api.net/letest02"
+        }
+    ],
+    "paths": {
+        "/userOptions": {
+            "get": {
+                "summary": "userOptions",
+                "description": "userOptions",
+                "operationId": "get-useroptions",
+                "responses": {
+                    "200": {
+                        "description": "null"
+                    }
+                }
+            },
+            "post": {
+                "summary": "userOptions",
+                "description": "userOptions",
+                "operationId": "post-useroptions",
+                "responses": {
+                    "200": {
+                        "description": "null"
+                    }
+                }
+            }
+        },
+        "/laconteMailer": {
+            "post": {
+                "summary": "laconteMailer",
+                "description": "laconteMailer",
+                "operationId": "post-lacontemailer",
+                "responses": {
+                    "200": {
+                        "description": "null"
+                    }
+                }
+            }
+        },
+        "/adminOptions": {
+            "get": {
+                "summary": "adminOptions",
+                "description": "adminOptions",
+                "operationId": "get-adminoptions",
+                "responses": {
+                    "200": {
+                        "description": "null"
+                    }
+                }
+            },
+            "post": {
+                "summary": "adminOptions",
+                "description": "adminOptions",
+                "operationId": "post-adminoptions",
+                "responses": {
+                    "200": {
+                        "description": "null"
+                    }
+                }
+            }
+        },
+        "/organization/adminMiddleware/{orgID}": {
+            "get": {
+                "summary": "organization",
+                "description": "organization",
+                "operationId": "get-organization",
+                "parameters": [
+                    {
+                        "name": "orgID",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": ""
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "null"
+                    }
+                }
+            },
+            "post": {
+                "summary": "organization",
+                "description": "organization",
+                "operationId": "post-organization",
+                "parameters": [
+                    {
+                        "name": "orgID",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": ""
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "null"
+                    }
+                }
+            }
+        },
+        "/organization/listorgs/{orgID}": {
+            "get": {
+                "summary": "listOrganizations",
+                "description": "listOrganizations",
+                "operationId": "get-listorganizations",
+                "parameters": [
+                    {
+                        "name": "orgID",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": ""
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "null"
+                    }
+                }
+            }
+        },
+        "/login": {
+            "post": {
+                "summary": "login",
+                "description": "login",
+                "operationId": "post-login",
+                "responses": {
+                    "200": {
+                        "description": "null"
+                    }
+                }
+            },
+            "options": {
+                "summary": "login",
+                "description": "login",
+                "operationId": "options-login",
+                "responses": {
+                    "200": {
+                        "description": "null"
+                    }
+                }
+            },
+            "get": {
+                "summary": "login",
+                "description": "login",
+                "operationId": "get-login",
+                "responses": {
+                    "200": {
+                        "description": "null"
+                    }
+                }
+            }
+        },
+        "/checkToken": {
+            "post": {
+                "summary": "checkToken",
+                "description": "checkToken",
+                "operationId": "post-checktoken",
+                "responses": {
+                    "200": {
+                        "description": "null"
+                    }
+                }
+            },
+            "get": {
+                "summary": "checkToken",
+                "description": "checkToken",
+                "operationId": "get-checktoken",
+                "responses": {
+                    "200": {
+                        "description": "null"
+                    }
+                }
+            }
+        },
+        "/listUserOrgs": {
+            "get": {
+                "summary": "listUserOrgs",
+                "description": "listUserOrgs",
+                "operationId": "get-listuserorgs",
+                "responses": {
+                    "200": {
+                        "description": "null"
+                    }
+                }
+            }
+        },
+        "/invitation/{orgName}/{orgID}/{email}": {
+            "get": {
+                "summary": "invitation",
+                "description": "invitation",
+                "operationId": "get-invitation",
+                "parameters": [
+                    {
+                        "name": "orgName",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": ""
+                        }
+                    },
+                    {
+                        "name": "orgID",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": ""
+                        }
+                    },
+                    {
+                        "name": "email",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": ""
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "null"
+                    }
+                }
+            },
+            "post": {
+                "summary": "invitation",
+                "description": "invitation",
+                "operationId": "post-invitation",
+                "parameters": [
+                    {
+                        "name": "orgName",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": ""
+                        }
+                    },
+                    {
+                        "name": "orgID",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": ""
+                        }
+                    },
+                    {
+                        "name": "email",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": ""
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "null"
+                    }
+                }
+            }
+        },
+        "/googleSheets": {
+            "get": {
+                "summary": "googleSheets",
+                "description": "googleSheets",
+                "operationId": "get-googlesheets",
+                "responses": {
+                    "200": {
+                        "description": "null"
+                    }
+                }
+            },
+            "post": {
+                "summary": "googleSheets",
+                "description": "googleSheets",
+                "operationId": "post-googlesheets",
+                "responses": {
+                    "200": {
+                        "description": "null"
+                    }
+                }
+            }
+        },
+        "/organization/{orgID}/remove": {
+            "post": {
+                "summary": "removeUserFromOrg",
+                "description": "removeUserFromOrg",
+                "operationId": "post-removeuserfromorg",
+                "parameters": [
+                    {
+                        "name": "orgID",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": ""
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "null"
+                    }
+                }
+            }
+        },
+        "/getUserEvents": {
+            "get": {
+                "summary": "getUserEvents",
+                "description": "getUserEvents",
+                "operationId": "get-getuserevents",
+                "responses": {
+                    "200": {
+                        "description": "null"
+                    }
+                }
+            },
+            "post": {
+                "summary": "getUserEvents",
+                "description": "getUserEvents",
+                "operationId": "post-getuserevents",
+                "responses": {
+                    "200": {
+                        "description": "null"
+                    }
+                }
+            }
+        },
+        "/getEvents": {
+            "get": {
+                "summary": "getEvents",
+                "description": "getEvents",
+                "operationId": "get-getevents",
+                "responses": {
+                    "200": {
+                        "description": "null"
+                    }
+                }
+            }
+        },
+        "/createOrganization": {
+            "post": {
+                "summary": "createOrganization",
+                "description": "Allows a user to create an organization",
+                "operationId": "post-createorganization",
+                "responses": {
+                    "200": {
+                        "description": "null"
+                    }
+                }
+            }
+        },
+        "/createEvents": {
+            "post": {
+                "summary": "createEvents",
+                "description": "Allows the user to create their own events and puts them into the DB",
+                "operationId": "post-createevents",
+                "responses": {
+                    "200": {
+                        "description": "context.res = {\n        \n        body: \"Successfully added \" + events.length + \" events to the database.\"\n    };"
+                    },
+                    "500": {
+                        "description": "\n    if (!req.body) {\n        context.res({\n            status:500,\n            body: \"JSON Body is empty\"\n        })\n    }"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "createOrgBody": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    }
+                }
+            },
+            "googleSheetsBody": {
+                "type": "object",
+                "properties": {
+                    "startDate": {
+                        "type": "string"
+                    },
+                    "endDate": {
+                        "type": "string"
+                    },
+                    "startYear": {
+                        "type": "string"
+                    },
+                    "endYear": {
+                        "type": "string"
+                    },
+                    "startMonth": {
+                        "type": "string"
+                    },
+                    "endMonth": {
+                        "type": "string"
+                    },
+                    "startDay": {
+                        "type": "string"
+                    },
+                    "endDay": {
+                        "type": "string"
+                    }
+                }
+            },
+            "laconteMailerBody": {
+                "type": "object",
+                "properties": {
+                    "orgId": {
+                        "type": "string"
+                    },
+                    "email": {
+                        "type": "string"
+                    }
+                }
+            },
+            "removerUserFromOrgBody": {
+                "type": "object",
+                "properties": {
+                    "email": {
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "string"
+                    }
+                }
+            },
+            "createEventsBody": {
+                "type": "object",
+                "properties": {
+                    "events": {
+                        "type": "array",
+                        "items": {
+                            "required": [
+                                "summary",
+                                "startDate",
+                                "endDate",
+                                "description",
+                                "location"
+                            ],
+                            "type": "object",
+                            "properties": {
+                                "summary": {
+                                    "type": "string"
+                                },
+                                "startDate": {
+                                    "type": "string"
+                                },
+                                "endDate": {
+                                    "type": "string"
+                                },
+                                "description": {
+                                    "type": "string"
+                                },
+                                "location": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "securitySchemes": {
+            "apiKeyHeader": {
+                "type": "apiKey",
+                "name": "Ocp-Apim-Subscription-Key",
+                "in": "header"
+            },
+            "apiKeyQuery": {
+                "type": "apiKey",
+                "name": "subscription-key",
+                "in": "query"
+            }
+        }
+    },
+    "security": [
+        {
+            "apiKeyHeader": []
+        },
+        {
+            "apiKeyQuery": []
+        }
+    ]
+}
